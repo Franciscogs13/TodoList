@@ -1,0 +1,20 @@
+@media(max-width: 480px){
+  body{
+    background-size: 450px;
+    background-position: center center;
+  }
+  
+  .container{
+    width: 90%;
+    margin-top: 100px;
+  }
+  .container input{
+    width: 90%;
+  }
+}
+@media (min-width: 481px) and (max-width: 800px){
+  body{
+    background-size: 500px;
+    background-position: center center;
+  }
+}
