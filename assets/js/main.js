@@ -18,6 +18,9 @@ function createTask(inputText, done = false) {
   const li = createLi();
   li.innerHTML = inputText;
   li.style.fontWeight = 'bold'; 
+  if (done) {
+    li.classList.add('concluido');
+  }
   lista.appendChild(li);
   clearInput();
   taskDone(li);
