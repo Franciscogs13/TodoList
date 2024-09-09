@@ -17,4 +17,7 @@
     background-size: 500px;
     background-position: center center;
   }
+  .container input{
+    width: 90%;
+  }
 }
