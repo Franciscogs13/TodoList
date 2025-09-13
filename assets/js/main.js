@@ -15,6 +15,13 @@ inputTarefa.addEventListener('keypress', (e) => {
 });
 
 function createTask(inputText, done = false) {
+  // --- INÍCIO DA MODIFICAÇÃO PARA O GTM ---
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'add_task_event', // nome do evento
+    task_name: inputText     // empurra o texto da task adicionada
+  });
+  // --- FIM FA MODIFICAÇÃO ---
   const li = createLi();
   li.innerHTML = inputText;
   li.style.fontWeight = 'bold'; 
